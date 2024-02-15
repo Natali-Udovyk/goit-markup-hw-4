@@ -66,18 +66,16 @@ span {
     color: #2e2f42;;
 }
 .links {
-    position: relative;
-    
-}
-.link {
     display: flex;
     gap: 40px;
+}
+.link {
+    position: relative;
+    display: block;
     font-weight: 500;
     color: #2e2f42;
     padding: 24px 0;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -88,15 +86,14 @@ span {
     
 }
 .link.is-active::after {
-    display: block;
-    width: 100%;
     content: "";
+    width: 100%;
     border-radius: 2px;
     height: 4px;
     background-color: #404bbf;
     position: absolute;
     left: 0;
-    bottom: -1;
+    bottom: -1px;
     height: 4px;
 
 }
@@ -105,9 +102,7 @@ span {
     line-height: 1.5;
     color: #434455;
     font-style: normal;
-    transition: color;
-    transition-duration: 250ms;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-address:hover,
 .link-address:focus {
@@ -123,11 +118,6 @@ span {
     gap: 40px;
     margin-left: 332px;
 }
-/* .addres-info ul {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 40px
-} */
 .banner {
     margin: 0 auto;
     background: #2e2f42;
@@ -175,9 +165,7 @@ span {
     padding: 16px 32px;
     margin: 0 auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus  {
@@ -192,9 +180,7 @@ background-color: #404bbf;
     gap: 24px;
 }
 .icons-links .link-icon {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-links .link-icon:hover,
 .icons-links .link-icon:focus {
@@ -300,25 +286,10 @@ background-color: #404bbf;
 .item-card {
     background-color: #FFFFFF;
     width: calc((100% - 48px) / 3);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0%);
 
 }
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
-    padding: 8px;
-    background-color: #3f51b5;
-    color: #fff;
-    font-family: sans-serif;
-  } */
     .overlay {
     position: absolute;
     top: 0;
@@ -421,9 +392,7 @@ background-color: #404bbf;
     height: 40px;
     border-radius: 50%;
     background-color: #4d5ae5;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .social-link .link-icon-footer:hover,
